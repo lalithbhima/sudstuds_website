@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sud Studs Car Wash - Premium car wash services with a focus on quality and customer satisfaction.">
+    <meta name="author" content="Sud Studs Car Wash">
+    <title>Sud Studs Detailing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/sudstuds1.png" alt="Sud Studs">
+            <h1 class="logo">Sud Studs Detailing</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#member">Membership</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Experience Premium Car Care</h2>
+            <p>Your car deserves the best. At Sud Studs, we offer top-tier car wash and detailing services with exceptional care.</p>
+            <a href="#services" class="cta-button">Discover Our Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>Exterior Wash</h3>
+                    <p>Get a sparkling clean car exterior with our efficient wash process. Your vehicle will shine in no time!</p>
+                </div>
+                <div class="service">
+                    <h3>Interior Cleaning</h3>
+                    <p>We provide a thorough cleaning for your car's interior with a focus on detailing every corner.</p>
+                </div>
+                <div class="service">
+                    <h3>Full Detailing</h3>
+                    <p>Comprehensive detailing service that covers both interior and exterior, giving your car a fresh look.</p>
+                </div>
+                <div class="service">
+                    <h3>Paint Protection & Waxing</h3>
+                    <p>Protect your vehicle’s paint with our premium waxing services, leaving it looking like new and protected from the elements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Prices Starting At</h2>
+            <div class="pricing-table">
+                <div class="pricing-plan">
+                    <h3>Exterior Wash</h3>
+                    <p class="price">$50</p>
+                    <p>Exterior wash to remove dirt, grime, and other contaminants.</p>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Interior Cleaning</h3>
+                    <p class="price">$60</p>
+                    <p>Thorough cleaning of your car’s seats, floors, and dashboard.</p>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Full Detailing</h3>
+                    <p class="price">$100</p>
+                    <p>A complete interior and exterior detailing with added care.</p>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Paint Protection & Waxing</h3>
+                    <p class="price">$140</p>
+                    <p>Enhance the shine of your vehicle and protect the paint for longer-lasting beauty.</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="member" class="member">
+        <div class="container">
+            <h2>Membership</h2>
+            <div class="member-table">
+                <div class="member-plan">
+                    <h3>Become a member today!</h3>
+                    <p>Sign up today for a full detailing up to two times every month</p>
+                    <p class="money"> Only for $120 month-to-month with free cancelation at anytime</p>
+
+                    <a href="#contact"><button onclick="fbq('track', 'Search', {search_string: jQuery(this).parent().children('input').eq(0).val()});">Sign Up</button></a>
+                </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2><br>
+            <p>This organization is founded by Lalithendra Reddy Bhima, Parker Lopez, and Ethan (Last). Sud Studs Detailing is dedicated to providing exceptional service, utilizing top-of-the-line cleaning products, and ensuring your car receives a high-quality wash every time. With years of experience, we are trusted by car owners for our attention to detail and eco-friendly approach. We bring the car wash to you, so you don't have to waste time driving anywhere, making it the most convenient and hassle-free option compared to other services.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p id="question">Have questions or want to schedule an appointment? Get in touch with us today by contacting us. Phone: 916-586-1124. Or, schedule an appointment.</p><br><br>
+            <form action="https://script.google.com/macros/s/AKfycbxgZ_qM5MFtqYQeHtaoV0u_lV8oNeDW9RpZHfxIE1Oyb7PumUrenrqsP2s8fn6DS-zd9A/exec" method="POST" autocomplete="on">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email"required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="tel" name="tel" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Should be 10 digit number" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="plans">Select Plan:</label>
+                <input list="plan" name="plan" required>
+                <datalist id="plan">
+                    <option value="Exterior Wash"></option>
+                    <option value="Interior Cleaning"></option>
+                    <option value="Full Detailing"></option>
+                    <option value="Paint Protection & Waxing"></option>
+                    <option value="Membership"></option>
+                </datalist>
+
+                <label for="text">Additional Comments:</label>
+                <textarea id="text" name="text" size="100"></textarea>
+
+                
+
+                <button type="submit" class="cta-button">Confirm</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sud Studs Detailing. All Rights Reserved.</p>
+
+            <p>Follow us on</p> <a href="https://www.instagram.com/sudstuds_/?igsh=NTc4MTIwNjQ2YQ%3D%3D#"><img src="https://www.dontdrivedirty.com/wp-content/uploads/2021/08/Group.svg"></a> 
+                <a href="#"><img src="https://www.dontdrivedirty.com/wp-content/uploads/2021/08/Vector.svg"></a> 
+                <a href="#"><img src="https://www.dontdrivedirty.com/wp-content/uploads/2021/08/Group-1.svg"></a> 
+                <a href="#"><img src="https://www.dontdrivedirty.com/wp-content/uploads/2024/09/logo-tiktok-svgrepo-com-1.svg"></a>
+                <a href="https://www.yelp.com/biz/sud-studs-folsom"><img src="/images/yelp.png"></a>
+        </div>  
+    </footer>
+
+</body>
+
+</html>
