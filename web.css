@@ -1,0 +1,355 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e9f6f9;
+}
+
+html :where(img) {
+    max-width: unset;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 30%;
+    height: 80%;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background-color: #fcfaf1;
+    color: #b3ecf8;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #b3ecf8;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #FF6600;
+}
+
+/* Hero Section */
+.hero {
+    background: url('car-wash-hero.jpg') no-repeat center center/cover;
+    height: 450px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #FF6600;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 30px;
+    width: 23%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: #f0f4f7;
+    padding: 60px 0;
+}
+
+.pricing h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.pricing-plan {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 23%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #004E92;
+}
+
+.pricing-plan .price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FF6600;
+}
+
+.pricing-plan p {
+    font-size: 16px;
+}
+
+/* Member Section */
+
+.member {
+    background-color: #e9f6f9;
+    padding: 60px 0;
+}
+
+.member h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.member-table {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.member-plan {
+    background-color: #004E92;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.member-plan .money {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #FF6600;
+    text-align: left;
+}
+
+.member-plan p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Sign Up section */
+button {
+    background-image: none;
+    width: auto;
+    padding: .944rem 1.111rem;
+    border-radius: 2.222rem;
+    font-size:1.111rem;
+    min-height: 3.444rem;
+    font-weight: 700;
+    transition: all .3s ease-out;
+    background-color: #54d219;
+}
+
+.search-box a.button, .search-box button {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.556rem;
+    height: 2.556rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: .889rem auto;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f0f4f7;
+    padding: 60px 0;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF6600;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer */
+footer {
+    background-color: #004E92;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: #FF6600;
+}
+
+footer img {
+    width: 3%;
+    height: 8%;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
